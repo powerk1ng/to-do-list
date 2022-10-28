@@ -1,0 +1,77 @@
+@import url(/styles/zerostyle.css);
+body {
+  min-height: 100vh;
+  background: #c7c7c7;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.task .container {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 720px;
+}
+
+.task__title {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  color: indigo;
+}
+
+.task__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+.task__header-input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin: 5px 0px;
+}
+
+.task__header-input input {
+  width: 100%;
+  border-radius: 10px;
+  padding: 7px 10px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+}
+
+.task__header-add {
+  padding-left: 10px;
+}
+
+.task__header-add .btn {
+  padding: 7px 12px;
+  border-radius: 5px;
+  border: none;
+  background: indigo;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.task__header-add .btn:hover {
+  -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.499);
+          box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.499);
+}
+
+.task__body-title {
+  font-size: 25px;
+  color: #0892ae;
+  font-weight: 500;
+  border-bottom: 1px solid #0892ae;
+  padding-bottom: 8px;
+}
+
+.task__body-title .fa-solid {
+  font-size: 20px;
+}
+/*# sourceMappingURL=style.css.map */
