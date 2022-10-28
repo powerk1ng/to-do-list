@@ -34,8 +34,8 @@ function createTask() {
   taskBtnBody.classList.add('task__header-add');
   taskWrapper.append(taskBtnBody);
 
-  newInput.value = addValue.value;
-  addValue.value = '';
+  newInput.value = task;
+  task = '';
 
 
   const deleteBtn = document.createElement('button');
