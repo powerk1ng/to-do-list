@@ -1,5 +1,5 @@
 const addTask = document.querySelector('#addTask');
-const addValue = document.querySelector('#taskValue');
+let addValue = document.querySelector('#taskValue');
 const taskBody = document.querySelector('.task__body');
 
 let isToggled = true;
@@ -8,7 +8,7 @@ function createTask() {
 
   //main-task input's value
   let task = addValue.value;
-   task = 'hi';  //need for removing alert if you want to skip task filling for testing.
+  task = 'hi';  //need for removing alert if you want to skip task filling for testing.
  
   if (!task) {
   alert('please fill the form');
@@ -34,6 +34,7 @@ function createTask() {
   newInput.setAttribute('readonly', 'readonly');
   taskInput.append(newInput);
 
+  
   //body for buttons
   const taskBtnBody = document.createElement('div');
   taskBtnBody.classList.add('task__header-add');
@@ -41,8 +42,8 @@ function createTask() {
 
 
   newInput.value = task;
-  task = '';
-
+  addValue.value = '';
+  
 
   //delete button
   const deleteBtn = document.createElement('button');
@@ -60,8 +61,9 @@ function createTask() {
 
   //selecting all delete buttons by id
   const deleteBtns = document.querySelectorAll('#delete');
+  // const editBtns = document.querySelectorAll('#edit');
 
-  // const editedBtn = document.querySelectorAll('#edit');
+  
 
   //DELETE BUTTONS By click FROM HERE.  
   deleteBtns.forEach(btn => {
@@ -73,16 +75,4 @@ function createTask() {
 
 
 
-  // editBtn.addEventListener('click', (e) => {
-  //   if (!isToggled) {
-  //     e.target.style.background = 'indigo';
-  //     e.target.textContent = 'EDIT';
-
-
-  //   } else {
-  //     e.target.style.background = 'red';
-  //     e.target.textContent = 'SAVE';
-  //   }
-    
-  //   isToggled = !isToggled;
-  // });
+  
